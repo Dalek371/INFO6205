@@ -51,8 +51,7 @@ public class RandomWalk {
      * @return the (Euclidean) distance from the origin to the current position.
      */
     public double distance() {
-        double d = Math.sqrt(x*x + y*y);
-        return d;
+        return Math.sqrt(x*x + y*y);
     }
 
     /**
@@ -76,7 +75,7 @@ public class RandomWalk {
 //        if (args.length == 0)
 //            throw new RuntimeException("Syntax: RandomWalk steps [experiments]");
       for(int i=0;i<10; i++){
-          int m =(int)(Math.random()*200 + 1);
+          int m =(int)(Math.random()*50 + 1);
           int n = 1000;
 //        if (args.length > 1) n = Integer.parseInt(args[1]);
           double meanDistance = randomWalkMulti(m, n);
