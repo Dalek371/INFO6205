@@ -8,7 +8,12 @@
 
 ### 1、Task
 
- 		Imagine a drunken man who, starting out leaning against a lamp post in the middle of an open space, takes a series of steps of the same length: 1 meter . The direction of these steps is randomly chosen from North, South, East or West. **After** **n** **steps, how far (\*d\*), generally speaking, is the man from the lamp post?** Note that *d* is the Euclidean distance of the man from the lamp-post. **Deduce the relationship**.
+Imagine a drunken man who, starting out leaning against a lamp post in the middle of an open space, 
+   takes a series of steps of the same length: 1 meter . 
+   The direction of these steps is randomly chosen from North, South, East or West. 
+   **After** **n** **steps, how far (\*d\*), generally speaking, is the man from the lamp post?** 
+   Note that *d* is the Euclidean distance of the man from the lamp-post. 
+   **Deduce the relationship**.
 
 Please find the code on
 
@@ -28,15 +33,15 @@ $$
 
 ​				1.1 Output Screenshot
 
-​				![](C:\Users\Administrator\Desktop\courses\info6205\1.PNG)
+![image](https://github.com/Dalek371/INFO6205/blob/Fall2021/src/main/java/appendix/assignment01/1.PNG)
 
-​				![](C:\Users\Administrator\Desktop\courses\info6205\2.PNG)
+![image](https://github.com/Dalek371/INFO6205/blob/Fall2021/src/main/java/appendix/assignment01/2.PNG)
 
 ​				Then we put all the points into the coordinate system with (n,d) as (x,y)
 
 ​				We will easily get a set of points that is very similar and close to the function of **y=x²** as the following graph
 
-​				![](C:\Users\Administrator\Desktop\courses\info6205\捕获.PNG)
+![image](https://github.com/Dalek371/INFO6205/blob/Fall2021/src/main/java/appendix/assignment01/function.PNG)
 
 
 
@@ -106,4 +111,4 @@ $$
 
 ### 4、Unit tests result
 
-![](C:\Users\Administrator\Desktop\courses\info6205\test.PNG)
+![image](https://github.com/Dalek371/INFO6205/blob/Fall2021/src/main/java/appendix/assignment01/test.PNG)
