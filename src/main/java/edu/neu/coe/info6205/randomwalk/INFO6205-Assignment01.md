@@ -1,3 +1,5 @@
+## Please move to the pdf in the same directory because formula is not supported by Github's markdown
+
 # Program Structure & Algorithms 2021 Fall
 
 ## Assignment No.1
@@ -17,7 +19,8 @@ Imagine a drunken man who, starting out leaning against a lamp post in the middl
 
 Please find the code on
 
-https://github.com/Dalek371/INFO6205/tree/Fall2021/src/main/java/edu/neu/coe/info6205/randomwalk
+https://github.com/Dalek371/INFO6205/tree/Fall2021/src/main/java/edu/neu/coe/info6205/randomwalkmarkdown 
+
 
 ### 2、Relationship Conclusion
 
