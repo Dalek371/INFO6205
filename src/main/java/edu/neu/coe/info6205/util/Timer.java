@@ -55,7 +55,22 @@ public class Timer {
     public <T, U> double repeat(int n, Supplier<T> supplier, Function<T, U> function, UnaryOperator<T> preFunction, Consumer<U> postFunction) {
         logger.trace("repeat: with " + n + " runs");
         // TO BE IMPLEMENTED: note that the timer is running when this method is called and should still be running when it returns.
-        return 0;
+        pause();
+        for (int i =0;i<n;i++){
+            T t = supplier.get();
+            if (null != preFunction) {
+                t = preFunction.apply(t);
+            }
+            //start clock counting
+            resume();
+            U u = function.apply(t);
+            pauseAndLap();
+            //stop
+            if (null != postFunction) {
+                postFunction.accept(u);
+            }
+        }
+        return meanLapTime();
     }
 
     /**
@@ -174,7 +189,7 @@ public class Timer {
      */
     private static long getClock() {
         // TO BE IMPLEMENTED
-        return 0;
+        return System.nanoTime();
     }
 
     /**
@@ -185,8 +200,8 @@ public class Timer {
      * @return the corresponding number of milliseconds.
      */
     private static double toMillisecs(long ticks) {
-        // TO BE IMPLEMENTED
-        return 0;
+
+        return (double)ticks/1000000;
     }
 
     final static LazyLogger logger = new LazyLogger(Timer.class);
