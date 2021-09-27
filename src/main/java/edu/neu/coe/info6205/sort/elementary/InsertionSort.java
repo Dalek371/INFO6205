@@ -70,7 +70,7 @@ public class InsertionSort<X extends Comparable<X>> extends SortWithHelper<X> {
             //set the index
             int temp = i - 1;
             //if index>target, swap
-            while (temp >= 0 && helper.compare(xs, temp, temp + 1) > 0) {
+            while (temp >= 0 && !helper.less(xs[temp], xs[temp + 1])) {
                 helper.swap(xs, temp, temp + 1);
                 temp--;
             }
