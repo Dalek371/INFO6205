@@ -84,42 +84,4 @@ public class InsertionSort<X extends Comparable<X>> extends SortWithHelper<X> {
     }
 
     //Benchmark Test
-    public static void main(String[] args) throws IOException {
-        int RunCount = 1000;
-        for(int k = 1000; k<=10000; k=k+1000) {
-            int n = k;
-            BaseHelper<Integer> helper = new BaseHelper<>("InsertionSort", n, Config.load(InsertionSort.class));
-            SortWithHelper<Integer> sorter = new InsertionSort<>(helper);
-            Benchmark<Integer[]> benchmarkTimer = new Benchmark_Timer<>("InsertionSort", sorter::preProcess, sorter::sort);
-
-            //random
-            double runRandom = benchmarkTimer.run(helper.random(Integer.class, r -> r.nextInt(n)), RunCount);
-            System.out.println("Random " + n + " times running," + " runtime: " + runRandom);
-
-            // ordered
-            Integer[] orderedArray = new Integer[n];
-            for (int i = 0; i < n; i++) {
-                orderedArray[i] = i;
-            }
-
-            double runOrdered = benchmarkTimer.run(orderedArray, RunCount);
-            System.out.println("Ordered " + n + " times running," + "runtime: " + runOrdered);
-
-            // partially ordered
-            Integer[] partiallyOrderedArray = helper.random(Integer.class, r -> r.nextInt(n));
-            Arrays.sort(partiallyOrderedArray, partiallyOrderedArray.length / 3, partiallyOrderedArray.length * 2 / 3);
-
-            double runPartially = benchmarkTimer.run(partiallyOrderedArray, RunCount);
-            System.out.println("Partially ordered " + n + " times running," + "runtime: " + runPartially);
-
-            // reverse ordered
-            Integer[] reversOrderedArray = new Integer[n];
-            for (int i = 0; i < n; i++) {
-                reversOrderedArray[i] = n - i - 1;
-            }
-
-            double runReverse = benchmarkTimer.run(reversOrderedArray, RunCount);
-            System.out.println("Reversed " + n + " times running," + "runtime: " + runReverse);
-        }
-    }
 }
