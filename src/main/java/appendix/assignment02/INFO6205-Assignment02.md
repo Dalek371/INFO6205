@@ -20,42 +20,42 @@
 
 Benchmark Test
 
-![](C:\Users\Administrator\Desktop\courses\info6205\Assignment02\BMtest.PNG)
+![image](https://github.com/Dalek371/INFO6205/blob/Fall2021/src/main/java/appendix/assignment02/BMtest.PNG)
 
 Timer Test
 
-![](C:\Users\Administrator\Desktop\courses\info6205\Assignment02\Timertest.PNG)
+![image](https://github.com/Dalek371/INFO6205/blob/Fall2021/src/main/java/appendix/assignment02/Timertest.PNG)
 
 (2)
 
 Insert Sort Test
 
-![](C:\Users\Administrator\Desktop\courses\info6205\Assignment02\InsertTest.PNG)
+![image](https://github.com/Dalek371/INFO6205/blob/Fall2021/src/main/java/appendix/assignment02/InsertTest.PNG)
 
 ### 3、Relationship Conclusion
 
 growth of time:
-**Ordered < Random ~ Partially ordered < Reverse ordered**
+#### Ordered < Partially ordered < Random < Reverse ordered
 
 Ordered array: the best condition: N times, O(N)
 
 Reverse ordered array: the worst condition, n*(n–1)/2 times, O(N²)
 
-Random/ Partially ordered: O(N)-O(N²) and their difference depends on the proportion of disordered parts in partially ordered array.
+Partially ordered/Random: O(N)-O(N²)
 
 ### 4、Evidence
 
 InsertionSort.java running test result in table:
 
-![](C:\Users\Administrator\Desktop\courses\info6205\Assignment02\table.PNG)
+![image](https://github.com/Dalek371/INFO6205/blob/Fall2021/src/main/java/appendix/assignment02/table.PNG)
 
 in chart:
 
-![](C:\Users\Administrator\Desktop\courses\info6205\Assignment02\chart.png)
+![image](https://github.com/Dalek371/INFO6205/blob/Fall2021/src/main/java/appendix/assignment02/chart.png)
 
 We can see the difference form the chart clearly and get the conclusion:
 
-Growth of time: **Ordered < Random ~ Partially ordered < Reverse ordered**
+Growth of time: **Ordered < Partially ordered < Random < Reverse ordered**
 
 
 
