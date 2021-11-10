@@ -18,11 +18,18 @@ public class Main {
 
     public static void main(String[] args) {
         processArgs(args);
-        System.out.println("Degree of parallelism: " + ForkJoinPool.getCommonPoolParallelism());
+        //System.out.println("Degree of parallelism: " + ForkJoinPool.getCommonPoolParallelism());
         Random random = new Random();
-        int[] array = new int[2000000];
+//        change array size
+        int[] array = new int[10000000];//2000000
         ArrayList<Long> timeList = new ArrayList<>();
-        for (int j = 50; j < 100; j++) {
+
+//        change threads
+        int threadsCount = 32; //2,4,8,16,32
+        ParSort.fp = new ForkJoinPool(threadsCount);
+        System.out.println("The real number of threads using is: "+threadsCount);
+
+        for (int j = 1; j < 1000; j=j+10) {
             ParSort.cutoff = 10000 * (j + 1);
             // for (int i = 0; i < array.length; i++) array[i] = random.nextInt(10000000);
             long time;
