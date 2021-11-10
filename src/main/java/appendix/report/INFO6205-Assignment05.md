@@ -20,21 +20,21 @@ You must prepare a report that shows the results of your experiments and draws a
 
 For the output result in console like this：
 
-![](C:\Users\Administrator\Desktop\Files\info6205\images\Assignment05\console.PNG)
+![image](https://github.com/Dalek371/INFO6205/blob/Fall2021/src/main/java/appendix/Assignment05/console.PNG)
 
 
 
 To see every test in the same time, put all of them in one table:
 
-![](C:\Users\Administrator\Desktop\Files\info6205\images\Assignment05\table1.PNG)
+![image](https://github.com/Dalek371/INFO6205/blob/Fall2021/src/main/java/appendix/Assignment05/table1.PNG)
 
-![table2](C:\Users\Administrator\Desktop\Files\info6205\images\Assignment05\table2.PNG)
+![image](https://github.com/Dalek371/INFO6205/blob/Fall2021/src/main/java/appendix/Assignment05/table2.PNG)
 
-![table3](C:\Users\Administrator\Desktop\Files\info6205\images\Assignment05\table3.PNG)
+![image](https://github.com/Dalek371/INFO6205/blob/Fall2021/src/main/java/appendix/Assignment05/table3.PNG)
 
 and in the chat:
 
-![](C:\Users\Administrator\Desktop\Files\info6205\images\Assignment05\chart.png)
+![image](https://github.com/Dalek371/INFO6205/blob/Fall2021/src/main/java/appendix/Assignment05/chart.png)
 
 we can see in the chat, for every threads number there is **a range of cutoff** which has a better stable performance than the rest part. 
 
@@ -52,7 +52,7 @@ So, the result we can observe for the char that the best cutoff will be around
 
 To be precisely, if there must be a common result of cut-off number that always work, it will be **25%**.
 
-![](C:\Users\Administrator\Desktop\Files\info6205\images\Assignment05\arrow.jpg)
+![image](https://github.com/Dalek371/INFO6205/blob/Fall2021/src/main/java/appendix/Assignment05/arrow.jpg)
 
 In other words, we can consider the cut-off value from **Array size / the number threads** to **Array size/2**, and **25%** will be commonly good.
 
